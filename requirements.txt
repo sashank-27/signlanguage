@@ -1,0 +1,6 @@
+Flask
+opencv-python
+torch
+ultralytics
+gTTS
+pyttsx3
