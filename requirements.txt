@@ -1,5 +1,5 @@
 flask==3.0.3
 opencv-python-headless
-torch
+torch --extra-index-url https://download.pytorch.org/whl/cpu
 ultralytics
 gtts
