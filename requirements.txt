@@ -1,7 +1,5 @@
-Flask
-opencv-python
+flask==3.0.3
+opencv-python-headless
 torch
 ultralytics
-gTTS
-pyttsx3
-opencv
+gtts
