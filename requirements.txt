@@ -4,3 +4,4 @@ torch
 ultralytics
 gTTS
 pyttsx3
+opencv
