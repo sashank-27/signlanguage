@@ -1,16 +1,117 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-}
-
-.video-container {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #444;
+    font-size: 2.5rem;
     margin-top: 20px;
-}
-
-#video-stream {
-    max-width: 100%;
-    border: 2px solid #333;
-    border-radius: 8px;
-}
+  }
+  
+  #main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+  }
+  
+  #left-gestures, #right-gestures {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 250px;
+  }
+  
+  #left-gestures img, #right-gestures img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #left-gestures img{
+    margin-left: -150px;
+  }
+  
+  #right-gestures img{
+    margin-left: 150px;
+  }
+  
+  
+  #left-gestures img:hover, #right-gestures img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #video-stream {
+    border: 8px solid #444;
+    border-radius: 10px;
+    width: 650px;
+    height: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  #controls {
+    margin-top: 30px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 768px) {
+    #main-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    #video-stream {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    #left-gestures, #right-gestures {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    #left-gestures img, #right-gestures img {
+      margin: 0 10px;
+      width: 100px;
+    }
+  }
+  #subtitles {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }

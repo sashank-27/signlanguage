@@ -11,7 +11,7 @@ import threading
 app = Flask(__name__)
 
 # Load the YOLO model
-model = YOLO('./best.pt')
+model = YOLO('/Users/bulusu/Desktop/yolov8/new/best.pt')
 
 CONFIDENCE_THRESHOLD = 0.5
 
