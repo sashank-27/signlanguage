@@ -24,12 +24,11 @@ else:
     try:
         import pyttsx3
         engine = pyttsx3.init()
-        engine.setProperty('rate', 150)  # Speed of speech
-        engine.setProperty('volume', 0.9)  # Volume level (0.0 to 1.0)
+        engine.setProperty('rate', 150)  
+        engine.setProperty('volume', 0.9)
     except Exception as e:
         print(f"Error initializing pyttsx3, switching to gTTS: {e}")
         engine = None
-
 # Flag to control ongoing speech
 is_speaking = False
 
